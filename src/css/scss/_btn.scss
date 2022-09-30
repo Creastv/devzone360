@@ -1,0 +1,20 @@
+.btn {
+  background-color: $main;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 21px;
+  padding: 30px;
+  line-height: 0;
+  display: inline-block;
+  transition: all 0.9s;
+  position: relative;
+  @media #{$sm} {
+    font-size: 18px;
+    padding: 20px;
+  }
+  &:hover {
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+    background-color: $main2;
+  }
+}
