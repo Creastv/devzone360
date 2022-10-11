@@ -42,14 +42,27 @@ add_action( 'widgets_init', 'cr_widgets_init' );
 
 function dev_scripts() {
 	wp_enqueue_style( 'icx-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'icx-custome-style', get_template_directory_uri().'/src/css/icx-main.min.css' ); 
-	wp_enqueue_script('icx-main', get_template_directory_uri().'/src/js/icx-main.js', array( 'jquery' ),'3', true );
-    wp_enqueue_style( 'icx-svipeer_css', 'https://unpkg.com/swiper/swiper-bundle.min.css' );
-    wp_enqueue_script('icx-swiper_js', 'https://unpkg.com/swiper/swiper-bundle.min.js',  array(), '20130456', true );
-	wp_enqueue_script( 'cx-logo', get_template_directory_uri() . '/src/js/lp.js', array(), '20130457', true );
+	wp_enqueue_style( 'icx-custome-style', get_template_directory_uri().'/src/css/dev-main.min.css' ); 
+	wp_enqueue_script('icx-main', get_template_directory_uri().'/src/js/dev-main.js', array( 'jquery' ),'3', true );
+    // wp_enqueue_style( 'icx-svipeer_css', 'https://unpkg.com/swiper/swiper-bundle.min.css' );
+    // wp_enqueue_script('icx-swiper_js', 'https://unpkg.com/swiper/swiper-bundle.min.js',  array(), '20130456', true );
+	// wp_enqueue_script( 'cx-logo', get_template_directory_uri() . '/src/js/lp.js', array(), '20130457', true );
 }
 add_action( 'wp_enqueue_scripts', 'dev_scripts' );
 require get_template_directory() . '/func/clean-up.php';
 require get_template_directory() . '/func/cpt.php';
+
+if ( function_exists( 'acf_add_options_page' ) ) {
+
+	acf_add_options_page( array(
+		'page_title' => 'Devzone',
+		'menu_title' => 'Devzone',
+		'menu_slug'  => 'theme-general-settings',
+		'capability' => 'edit_posts',
+		'redirect'   => false
+	) );
+
+}
+
 
 
