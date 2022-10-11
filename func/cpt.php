@@ -1,22 +1,13 @@
 <?php 
-// //////////////////////////////////////////////////////////////oferty
-function icx_post_types() {
+// //////////////////////////////////////////////////////////////offers
+function dev_post_types() {
 
 	$labels = array(
-		'name'               => 'Oferty',
-		'singular_name'      => 'Oferty',
-		'menu_name'          => 'Oferty',
-		'name_admin_bar'     => 'Oferty',
-		'add_new'            => 'Dodaj',
-		'add_new_item'       => 'Dodaj ',
-		'new_item'           => 'Nowy',
-		'edit_item'          => 'Edytuj ',
-		'view_item'          => 'Zobacz ',
-		'all_items'          => 'oferty',
-		'search_items'       => 'Szukaj',
-		'parent_item_colon'  => 'Parent :',
-		'not_found'          => 'Nie znaleziono',
-		'not_found_in_trash' => 'Nie znaleziono',
+		'name'               => 'Offers',
+		'singular_name'      => 'Offers',
+		'menu_name'          => 'Offers',
+		'name_admin_bar'     => 'Offers',
+		'all_items'          => 'Offers',
 	);
 
 	$args = array( 
@@ -30,11 +21,11 @@ function icx_post_types() {
 		'query_var'         => true,
 		'publicly_queryable' => true,
 		'show_in_rest' => true,
-		"rewrite"             => array( "slug" => "oferta", "with_front" => true ),
-		'supports'      => array( 'title', 'page-attributes', 'thumbnail', 'editor', 'excerpt' ),
+		"rewrite"             => array( "slug" => "offers", "with_front" => true ),
+		'supports'      => array( 'title', 'page-attributes', 'thumbnail', 'editor' ),
 		// , 'editor' 
 	);
-    register_post_type( 'oferta', $args );
+    register_post_type( 'offers', $args );
 
 }
-add_action( 'init', 'icx_post_types' );
+add_action( 'init', 'dev_post_types' );

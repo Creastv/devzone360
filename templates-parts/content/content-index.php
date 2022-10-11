@@ -4,7 +4,7 @@
     </h2>
     <div class="meta-group">
         <div class="meta meta-category">
-            <span><?php _e(' Kategoria: ', 'icx' ); ?></span>
+            <span><?php _e(' Kategoria: ', 'dev' ); ?></span>
             <?php the_category();?>
         </div>
         <time class="meta meta-data-pub published" datetime="<?php the_time('m-j-y g:i-A') ?>">

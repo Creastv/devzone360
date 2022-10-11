@@ -6,9 +6,9 @@
                     404
                 </h1>
                 <div id="error" class="text-center">
-                    <h2><?php _e( 'Upss. Chyba się zgubiłeś?', 'dz' ); ?></h2>
+                    <h2><?php _e( 'Upss. Chyba się zgubiłeś?', 'dev' ); ?></h2>
                     <a class="btn btn-main" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                    <?php _e( 'Wróć do strony głównej >', 'dz' ); ?></a>
+                    <?php _e( 'Wróć do strony głównej >', 'dev' ); ?></a>
                 </div>
             </div>
         </div>
