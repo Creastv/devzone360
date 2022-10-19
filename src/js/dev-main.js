@@ -1,16 +1,16 @@
 (window.load = function (event) {
   const togglerNav = document.querySelector(".js-toggler-nav");
-  const headerNav = document.querySelector(".js-navigation");
+  const nav = document.querySelector(".js-navigation");
   let navFlag = false;
 
   togglerNav.addEventListener("click", () => {
     if (navFlag == false) {
-      headerNav.classList.add("active");
+      nav.classList.add("active");
       togglerNav.classList.add("active");
       document.querySelector("body").style.overflow = "hidden";
       navFlag = true;
     } else {
-      headerNav.classList.remove("active");
+      nav.classList.remove("active");
       togglerNav.classList.remove("active");
       document.querySelector("body").style.overflow = "initial";
       // document.querySelector(".js-header").classList.remove("active");
@@ -30,12 +30,11 @@
         }, 100);
     }, 0);
   }
-
   // Close after click the navmenu on mobile
   const itemsNAv = document.querySelectorAll(".js-navigation a");
   for (let i = 0; i < itemsNAv.length; i++) {
     itemsNAv[i].addEventListener("click", () => {
-      headerNav.classList.remove("active");
+      nav.classList.remove("active");
       togglerNav.classList.remove("active");
       navFlag = false;
     });
@@ -62,5 +61,13 @@
       }
   });
 
-})();
+  // set body padding top by geting header height
+  function heightHeader(){
+    const heightHeader = document.querySelector("#header");
+    document.querySelector("body").style.paddingTop = heightHeader.clientHeight + "px";
+  };
+  window.addEventListener("resize", heightHeader );
+  heightHeader();
 
+ 
+})();
