@@ -178,3 +178,20 @@
 }
 
 
+#go-to-top.active{
+    bottom:40px;
+    transform: all 0.8s;
+}
+
+#go-to-top{
+    position: fixed;
+    z-index: 9;
+    width: 22px;
+    height: 14px;
+    bottom:-100px;
+    right: 40px;
+    background-image: url('../img/go-to-top.png');
+    background-size: contain;
+    background-position: center;
+    transform: all 0.8s;
+}

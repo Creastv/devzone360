@@ -7,7 +7,7 @@
 		'menu_class' 	  => 'header-nav-list', 
 		'container' 	  => false, 
 		'echo' 			  => false,
-		'items_wrap' 	  => '<ul id="%1$s" class="%2$s" itemscope itemtype="https://www.schema.org/SiteNavigationElement">%3$s</ul>',
+		'items_wrap' 	  => '<ul id="%1$s" class="%2$s js-header-nav-list " itemscope itemtype="https://www.schema.org/SiteNavigationElement">%3$s</ul>',
 	));
 	$temp_menu = str_replace("<a", "<a itemprop='url' ", $temp_menu); // We set an attribute for menu items through replacement
 
