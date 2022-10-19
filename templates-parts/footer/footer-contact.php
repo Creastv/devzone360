@@ -1,18 +1,20 @@
 <?php
+$pos = get_field('position', 'options');
+$name = get_field('name_and_surname', 'options');
 $email = get_field('email', 'options');
-$tel = get_field('phone_no', 'options');
-$telLink = get_field('phone_no_link', 'options');
+$tel = get_field('phone', 'options');
+$telLink = get_field('phone_link', 'options');
 ?>
 <div class="footer__w__contact">
     <div class="g-title g-title--small">
-        <span class="g-title__pref" >Account Manager</span>
-        <p class="g-title__title" >Christian Woznicki</p>
+        <span class="g-title__pref" ><?php echo $pos; ?></span>
+        <p class="g-title__title" ><?php echo $name; ?></p>
     </div>
     <div class="g-buttons">
         <ul>
         <?php if(!empty($email)) { ?>
         <li>
-            <a href="mailto: <?php echo $email; ?>" class="btn"> 
+            <a href="mailto: <?php echo $email; ?>" class="btn btn--small"> 
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
                 height="24px" viewBox="0 0 43.3 35.4" style="enable-background:new 0 0 43.3 35.4;" xml:space="preserve">
                     <path fill="#FF0033" d="M35.1,35.4H8.2c-4.5,0-8.2-3.7-8.2-8.2V8.2C0,3.7,3.7,0,8.2,0h26.9c4.5,0,8.2,3.7,8.2,8.2v19.1
@@ -31,7 +33,7 @@ $telLink = get_field('phone_no_link', 'options');
         <?php } ?>
         <?php if(!empty($tel) && !empty($telLink)) { ?>
          <li>
-            <a href="mailto:<?php echo $telLink; ?>" class="btn">
+            <a href="mailto:<?php echo $telLink; ?>" class="btn btn--small">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
                 height="24px" viewBox="0 0 34.4 54.4" style="enable-background:new 0 0 34.4 54.4;" xml:space="preserve">
                     <path fill="#FF0033" d="M28,54.4H5.1c-2.8,0-5.1-2.3-5.1-5.1V5.1C0,2.3,2.3,0,5.1,0h24.2c2.8,0,5.1,2.3,5.1,5.1v32

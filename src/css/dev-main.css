@@ -20,7 +20,7 @@ p {
 
 @media only screen and (max-width: 768px) {
   p {
-    font-size: 16px !important;
+    font-size: 16px;
   }
 }
 
@@ -28,8 +28,19 @@ p {
   text-align: center;
 }
 
+.c-main {
+  color: #ff0033 !important;
+}
+
 .error404 h1 {
-  font-size: 120px !important;
+  font-size: 100px !important;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.error404 .btn {
+  text-align: center;
+  margin: 0 auto;
 }
 
 #error {
@@ -91,7 +102,7 @@ body {
 
 #footer {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .footer__wraper {
@@ -111,6 +122,24 @@ body {
   padding: 50px 15px 50px 0;
 }
 
+@media only screen and (max-width: 998px) {
+  .footer__w__contact {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__w__contact {
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
 .footer__w__contact:before {
   content: "";
   position: absolute;
@@ -123,9 +152,57 @@ body {
   z-index: -1;
 }
 
+@media only screen and (max-width: 998px) {
+  .footer__w__contact:before {
+    right: -15px;
+  }
+}
+
+.footer__w__contact .g-buttons {
+  margin-top: 35px;
+}
+
 .footer__w__contact .g-buttons ul {
   list-style: none;
   padding: 0;
+}
+
+@media only screen and (max-width: 998px) {
+  .footer__w__contact .g-buttons ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.footer__w__contact .g-buttons ul li a {
+  min-width: auto;
+  margin: 20px 0;
+}
+
+@media only screen and (max-width: 998px) {
+  .footer__w__contact .g-buttons ul li a {
+    margin: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__w__contact .g-buttons ul li a {
+    font-size: 12px;
+  }
+}
+
+.footer__w__contact .g-buttons ul li a span {
+  margin-left: 10px;
+}
+
+.footer__w__contact .g-buttons ul li a path {
+  fill: #fff;
 }
 
 .footer__w__info {
@@ -133,9 +210,151 @@ body {
   width: 33%;
 }
 
+@media only screen and (max-width: 998px) {
+  .footer__w__info {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__w__info {
+    padding: 30px 0;
+    width: 100%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
+.footer__w__info img {
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__w__info img {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__w__info .name {
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__w__info .name {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__w__info .address {
+  font-size: 12px;
+  line-height: 28px;
+  margin-bottom: 85px;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__w__info .address {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__w__info .f__w__info__inf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__w__info .f__w__info__inf p {
+  font-size: 12px;
+}
+
 .footer__w__menus {
   padding: 50px;
   width: 33%;
+}
+
+@media only screen and (max-width: 998px) {
+  .footer__w__menus {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__w__menus {
+    padding: 30px 0;
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.f__w__menu__wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.f__w__menu__wraper .f__w__menu__wraper-col-1 {
+  width: 100%;
+}
+
+.f__w__menu__wraper .f__w__menu__wraper-col-2 {
+  width: 50%;
+}
+
+.f__w__menu__wraper ul {
+  list-style: none;
+  padding: 0;
+}
+
+.f__w__menu__wraper ul li a {
+  text-decoration: none;
+  color: #cccccc;
+  font-size: 14px;
+  padding: 12px 30px 12px 0;
+  display: block;
+  position: relative;
+}
+
+.f__w__menu__wraper ul li a:hover {
+  color: #ff0033;
+}
+
+.f__w__menu__wraper ul li a:hover:after {
+  -webkit-transform: translate(-20px, -50%);
+          transform: translate(-20px, -50%);
+  opacity: 1;
+}
+
+.f__w__menu__wraper ul li a:after {
+  content: "";
+  -webkit-transition: 1s opacity linear;
+  transition: 1s opacity linear;
+  -webkit-transition: .2s transform linear;
+  transition: .2s transform linear;
+  background-image: url("../img/arrow-nav.png");
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(-50px, -50%);
+          transform: translate(-50px, -50%);
+  opacity: 0.1;
+  width: 20px;
+  height: 8px;
+  display: block;
 }
 
 .js-navigation.active {
@@ -348,7 +567,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 35px;
-  border: 1px solid #525252;
+  border: 1px solid #ffff;
   border-radius: 100px;
   text-decoration: none;
   color: #fff;
@@ -377,17 +596,22 @@ body {
 }
 
 .btn {
-  background-color: #ff0033;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 35px;
+  max-width: 265px;
+  border: 1px solid #ffff;
+  border-radius: 100px;
   text-decoration: none;
-  text-transform: uppercase;
   color: #fff;
-  font-size: 21px;
-  padding: 30px;
-  line-height: 0;
-  display: inline-block;
-  -webkit-transition: all 0.9s;
-  transition: all 0.9s;
-  position: relative;
+  font-size: 14px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -398,8 +622,11 @@ body {
 }
 
 .btn:hover {
-  -webkit-box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ff0033;
   background-color: #ff0033;
+}
+
+.btn--small {
+  padding: 10px 35px;
 }
 /*# sourceMappingURL=dev-main.css.map */
