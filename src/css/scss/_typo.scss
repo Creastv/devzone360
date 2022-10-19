@@ -12,7 +12,7 @@ h6 {
 }
 p {
   font-family: 'Inter', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 18px;
   @media #{$sm} {
     font-size: 16px;
@@ -63,5 +63,27 @@ a{
     font-family: 'Roboto Slab', serif;
     font-weight: 400;
     font-size: 36px;
+  }
+}
+.g-title--big{
+  .g-title__pref{
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .g-title__title{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 72px;
+  }
+}
+.g-title--middle{
+  .g-title__pref{
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .g-title__title{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 55px;
   }
 }

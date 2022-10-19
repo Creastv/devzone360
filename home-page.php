@@ -6,13 +6,13 @@
 */
 get_header();
 echo '<article>';
-get_template_part( 'templates-parts/lp/lp', 'slider' );
-get_template_part( 'templates-parts/lp/lp', 'about-us' );
-get_template_part( 'templates-parts/lp/lp', 'with-us' );
-get_template_part( 'templates-parts/lp/lp', 'offer' );
-get_template_part( 'templates-parts/lp/lp', 'cta' );
-get_template_part( 'templates-parts/lp/lp', 'experiences' );
-get_template_part( 'templates-parts/lp/lp', 'we-help' );
-get_template_part( 'templates-parts/lp/lp', 'become-a-lion' );
+get_template_part( 'templates-parts/home/home', 'slider' );
+get_template_part( 'templates-parts/home/home', 'about-us' );
+get_template_part( 'templates-parts/home/home', 'with-us' );
+get_template_part( 'templates-parts/home/home', 'offer' );
+get_template_part( 'templates-parts/home/home', 'cta' );
+get_template_part( 'templates-parts/home/home', 'experiences' );
+get_template_part( 'templates-parts/home/home', 'we-hehome' );
+get_template_part( 'templates-parts/home/home', 'become-a-lion' );
 echo '</article>';
 get_footer();

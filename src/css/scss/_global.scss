@@ -28,4 +28,8 @@ body {
 .row{
   padding-left: 50px;
   padding-right: 50px;
+  @media #{$sm} {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
