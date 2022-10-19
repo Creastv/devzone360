@@ -31,3 +31,25 @@ p {
 #error {
   padding: 0 0 50px 0;
 }
+
+.g-title{
+  .g-title__pref{
+    display: block;
+  }
+  .g-title__title{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+  }
+}
+.g-title--small{
+  .g-title__pref{
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .g-title__title{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 36px;
+  }
+}

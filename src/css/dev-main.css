@@ -36,6 +36,27 @@ p {
   padding: 0 0 50px 0;
 }
 
+.g-title .g-title__pref {
+  display: block;
+}
+
+.g-title .g-title__title {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+}
+
+.g-title--small .g-title__pref {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.g-title--small .g-title__title {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 36px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -66,6 +87,55 @@ body {
 .row {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+#footer {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.footer__wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__w__contact {
+  position: relative;
+  width: 33%;
+  padding: 50px 15px 50px 0;
+}
+
+.footer__w__contact:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #e2184f;
+  background: linear-gradient(95deg, #e2184f 32%, #cf0825 100%);
+  width: 200%;
+  height: 100%;
+  z-index: -1;
+}
+
+.footer__w__contact .g-buttons ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__w__info {
+  padding: 50px;
+  width: 33%;
+}
+
+.footer__w__menus {
+  padding: 50px;
+  width: 33%;
 }
 
 .js-navigation.active {
