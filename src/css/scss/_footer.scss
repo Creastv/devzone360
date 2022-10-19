@@ -177,6 +177,28 @@
 
 }
 
+.sticky-social-media{
+    position: fixed;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 20px;
+    ul{
+        list-style: none;
+        padding: 0px;
+        text-align: center;
+        li{
+            a{
+                padding: 10px 0;
+                display: inline-block;
+                &:hover{
+                    path{
+                        fill:$main;
+                    }
+                }
+            }
+        }
+    }
+}
 
 #go-to-top.active{
     bottom:40px;
@@ -185,11 +207,12 @@
 
 #go-to-top{
     position: fixed;
+    cursor: pointer;
     z-index: 9;
     width: 22px;
     height: 14px;
     bottom:-100px;
-    right: 40px;
+    right: 20px;
     background-image: url('../img/go-to-top.png');
     background-size: contain;
     background-position: center;

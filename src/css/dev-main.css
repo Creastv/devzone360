@@ -96,14 +96,14 @@ body {
 }
 
 .container {
-  max-width: 1560px;
+  max-width: 1630px;
   width: 100%;
   margin: 0 auto;
 }
 
 .row {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 #footer {
@@ -363,6 +363,29 @@ body {
   display: block;
 }
 
+.sticky-social-media {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  right: 20px;
+}
+
+.sticky-social-media ul {
+  list-style: none;
+  padding: 0px;
+  text-align: center;
+}
+
+.sticky-social-media ul li a {
+  padding: 10px 0;
+  display: inline-block;
+}
+
+.sticky-social-media ul li a:hover path {
+  fill: #ff0033;
+}
+
 #go-to-top.active {
   bottom: 40px;
   -webkit-transform: all 0.8s;
@@ -371,11 +394,12 @@ body {
 
 #go-to-top {
   position: fixed;
+  cursor: pointer;
   z-index: 9;
   width: 22px;
   height: 14px;
   bottom: -100px;
-  right: 40px;
+  right: 20px;
   background-image: url("../img/go-to-top.png");
   background-size: contain;
   background-position: center;
