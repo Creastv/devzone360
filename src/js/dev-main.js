@@ -1,24 +1,24 @@
 (window.load = function (event) {
-  const togglerNav = document.querySelector(".toggler-nav");
-  const headerNav = document.querySelector(".header-nav");
+  const togglerNav = document.querySelector(".js-toggler-nav");
+  const headerNav = document.querySelector(".js-navigation");
   let navFlag = false;
 
   togglerNav.addEventListener("click", () => {
     if (navFlag == false) {
       headerNav.classList.add("active");
       togglerNav.classList.add("active");
-      document.querySelector("#header").classList.add("active");
+      document.querySelector(".js-header").classList.add("active");
       navFlag = true;
     } else {
       headerNav.classList.remove("active");
       togglerNav.classList.remove("active");
-      document.querySelector("#header").classList.remove("active");
+      document.querySelector(".js-header").classList.remove("active");
       navFlag = false;
     }
   });
 
   // Close after click the navmenu on mobile
-  const itemsNAv = document.querySelectorAll(".header-nav a");
+  const itemsNAv = document.querySelectorAll(".js-navigation a");
   for (let i = 0; i < itemsNAv.length; i++) {
     // console.log(itemsNAv[1]);
     itemsNAv[i].addEventListener("click", () => {
@@ -64,21 +64,21 @@
   }
 })();
 
-jQuery(document).ready(function () {
-  jQuery("#navigation a").on("click", function (e) {
-    var target = this.hash,
-      jQuerytarget = jQuery(target);
+// jQuery(document).ready(function () {
+//   jQuery(".js-navigation a").on("click", function (e) {
+//     var target = this.hash,
+//       jQuerytarget = jQuery(target);
 
-    jQuery("html, body")
-      .stop()
-      .animate(
-        {
-          scrollTop: jQuerytarget.offset().top - 50
-        },
-        400,
-        "swing",
-        function () {}
-      );
-    return false;
-  });
-});
+//     jQuery("html, body")
+//       .stop()
+//       .animate(
+//         {
+//           scrollTop: jQuerytarget.offset().top - 50
+//         },
+//         400,
+//         "swing",
+//         function () {}
+//       );
+//     return false;
+//   });
+// });

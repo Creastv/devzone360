@@ -14,12 +14,13 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="js-header" itemscope itemtype="http://schema.org/WPHeader">
         <div class="container">
             <div class="row">
+                 <?php get_template_part('templates-parts/header/header', 'nav'); ?>
                 <div class="navbar">
                     <?php get_template_part('templates-parts/header/header', 'brand'); ?>
-                    <?php get_template_part('templates-parts/header/header', 'nav'); ?>
+                    <?php get_template_part('templates-parts/header/header', 'contact'); ?>
                     <?php get_template_part('templates-parts/header/header', 'burger'); ?>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-<nav id="navigation" class="header-nav js">
+<nav id="navigation" class="header-nav js-navigation">
     <?php 
     $navLocation = 'primary_menu';
 	$temp_menu = wp_nav_menu(array(
