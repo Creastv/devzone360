@@ -16,7 +16,12 @@
          }
     }
 }
+#header.up{
+    top: -200px!important;
+}
+
 #header{
+    transition: top 0.6s linear;
     background-color: $black;
     background-image: url('../img/body-bg.png');
     position: fixed;
@@ -38,11 +43,13 @@
         padding: 10px 0 55px 0;
      }
 }
+
 .nav-brand{
      @media #{$sm} {
         order:2;
     }
 }
+
 .header-nav{
     // display: none;
     position: fixed;
