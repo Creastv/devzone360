@@ -1,0 +1,114 @@
+.cta{
+    margin-bottom: 50px;
+    .cta-wraper{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .cta-wraper__col-2{
+        width: 50%;
+         @media #{$sm} {
+            width: 100%;
+         }
+        &:nth-child(2){
+            background: rgb(226,24,79);
+            background: linear-gradient(95deg, rgba(226,24,79,1) 32%, rgba(207,8,37,1) 100%);
+            padding: 0 100px 100px;
+            position: relative;
+            z-index: 2;
+             @media #{$xlg} {
+                padding: 40px;
+             }
+             @media #{$sm} {
+                padding: 50px 20px;
+                margin-top: -50px;
+                z-index: 2;
+                position: relative;
+             }
+        }
+        img{
+            opacity: 0.7;
+            width: 172%;
+            transform: translate(-160px, 25px);
+            @media #{$lg} {
+                transform: translate(-100px, 25px);
+            }
+            @media #{$sm} {
+                width: 150%;
+                transform: translate(0, 0);
+            }
+        }
+    }
+    .cta-wraper__col-2__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        width: 150%;
+        margin-left: -50%;
+         @media #{$xlg} {
+            width: 130%;
+            margin-left: -30%;
+         }
+        @media #{$sm} {
+            width: 100%;
+            margin-left: 0;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .g-title{
+             @media #{$sm} {
+                text-align: center;
+                width: 100%;
+             }
+        }
+        .g-title__pref{
+            @media #{$lg} {
+               color:#fff!important;
+            }
+        }
+        .g-title__title{
+            @media #{$lg} {
+                font-size: 31px;
+            }
+            @media #{$sm} {
+                font-size: 28px;
+            }
+        }
+        a{
+             @media #{$lg} {
+                padding: 10px 35px;
+             }
+             @media #{$sm} {
+                text-align: center;
+                padding: 10px 35px;
+                min-width: inherit;
+                // display: block;
+             }
+        }
+    }
+    .cta-wraper__col-2__container{
+        p{
+            font-size: 48px;
+            color:#fff;
+            margin: 0;
+            padding: 0;
+             @media #{$xlg} {
+                font-size: 34px;
+             }
+            @media #{$lg} {
+                font-size: 21px;
+            }
+            @media #{$sm} {
+                font-size: 21px;
+                text-align: center;
+            }
+            a{
+                text-decoration: none;
+                color:#fff;
+                font-weight: 700;
+            }
+        }
+    }
+}

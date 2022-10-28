@@ -38,7 +38,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 55px 0;
+    padding: 35px 0;
      @media #{$sm} {
         padding: 10px 0 55px 0;
      }
@@ -68,6 +68,9 @@
         overflow-y: auto;
         list-style: none;
         text-align: center;
+         @media #{$sm} {
+                padding-top: 200px;
+        }
             li.liVisible{
                 opacity:1;
                 transform: translate(0, 0px);

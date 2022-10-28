@@ -1,8 +1,11 @@
 #about-us{
     position: relative;
-    z-index: 3;
+    z-index: 9;
     .g-title{
         margin-bottom: 100px;
+        @media #{$xlg} {
+            margin-bottom: 50px;
+        }
     }
     .g-title__desc{
         margin-top: 30px;
@@ -19,18 +22,34 @@
 .bullets{
     display: flex;
     justify-content: center;
-    padding-left: 180px;
-    padding-right: 180px;
+    flex-wrap: wrap;
+    padding-left: 12%;
+    padding-right: 12%;
+    
+    @media #{$lg} {
+        padding-left: 0;
+        padding-right: 0;
+    }
     .bullets__box{
         width: 33.33%;
         padding: 40px;
         text-align: center;
+        @media #{$md} {
+            padding: 10px;
+        }
+        @media #{$sm} {
+            width: 100%;
+            padding: 20px 0;
+        }
     }
     .bullets__box__icon{}
     .bullets__box__title{
         font-size: 32px;
         font-weight: 700;
         margin-bottom: 50px;
+         @media #{$sm} {
+            margin-bottom: 0px;
+         }
     }
     .bullets__box__desc{
         color:#cccccc;

@@ -2,10 +2,10 @@
 $title = get_field('tytul_cs');
 ?>
 
-<section id="with-us" class="with-us">
+<section id="with-us" class="with-us" data-aos="fade-up">
     <div class="with-us__wraper">
         <div class="with-us__wraper__col-2">
-            <img style="    transform: translate(-150px, 0px);" src="<?php echo get_template_directory_uri() ?>/src/img/bg-with-us.png">
+            <img src="<?php echo get_template_directory_uri() ?>/src/img/bg-with-us.png">
         </div>
         <div class="with-us__wraper__col-2">
             <div class="slider__wraper__content">

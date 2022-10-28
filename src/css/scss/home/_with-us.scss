@@ -1,12 +1,16 @@
 #with-us{
-    padding: 80px 0;
+    padding: 50px 0;
     .with-us__wraper{
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         .with-us__wraper__col-2{
             position: relative;
             z-index: -1;
             width: 50%;
+            @media #{$sm} {
+                width: 100%;
+            }
             &:nth-child(1){
                 position: relative;
                 &:before{
@@ -19,8 +23,19 @@
                     width: 200%;
                     height: 80%;
                     z-index: -1;
-                    @media #{$md} {
-                        right: -15px;
+                    @media #{$xlg} {
+                        right: 40px;
+                    }
+                }
+                 img{
+                    transform: translate(-150px, 0px);
+                     @media #{$md} {
+                        transform: translate(-300px, 0px);
+                    }
+                    @media #{$sm} {
+                        width: 100%;
+                        transform: translate(0, 0)!important;
+                        
                     }
                 }
                 // &:after{

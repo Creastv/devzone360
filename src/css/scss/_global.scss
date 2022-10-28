@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 *,
 ::after,
@@ -12,6 +13,7 @@ body {
   padding: 0;
   background-color: $black;
   background-image: url('../img/body-bg.png');
+      background-position: center;
   color:#fff;
   overflow-x: hidden;
 
@@ -31,5 +33,6 @@ body {
   @media #{$sm} {
     padding-left: 15px;
     padding-right: 15px;
+
   }
 }

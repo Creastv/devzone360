@@ -1,0 +1,65 @@
+.offers{
+    margin-bottom: 50px;
+    .offers-wraper{
+        padding-left: 180px;
+        padding-right: 180px;
+        @media #{$lg} {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+    .offer-cart{
+        padding: 20px;
+        border-bottom: 1px solid #424242;
+         transition: all 0.2s linear;
+        &:hover{
+             box-shadow: 0px 0px 40px 20px rgba(255, 255, 255,  0.1);
+            h3{
+            transition: all 0.5s linear;
+            background: rgb(226,24,79);
+            background: linear-gradient(95deg, rgba(221,116,145,1) 50%, rgba(207,8,37,1) 100%);
+             -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            }
+            svg{
+                animation-name: arrow;
+                animation-duration: 1s;
+            }
+        }
+       
+    }
+    .offer-cart__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        text-decoration: none;
+        h3{
+            font-family: 'Inter', sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            margin: 0;
+            background: rgb(226,24,79);
+            background: linear-gradient(95deg, rgba(226,24,79,1) 32%, rgba(207,8,37,1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+             @media #{$sm} {
+                font-size: 24px;
+             }
+        }
+        svg{
+            padding: 0 20px;
+        }
+    }
+    .offer-cart__content{
+         p{
+            font-size: 14px;
+        }
+    }
+}
+
+@keyframes arrow {
+  0% {margin-right: 0px;}
+  50% {margin-right: 30px;}
+  10% {margin-right: 0;}
+}

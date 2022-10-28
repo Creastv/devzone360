@@ -12,7 +12,7 @@
     } else {
       nav.classList.remove("active");
       togglerNav.classList.remove("active");
-      document.querySelector("body").style.overflow = "initial";
+      document.querySelector("body").style.overflow = "inherit";
       // document.querySelector(".js-header").classList.remove("active");
       navFlag = false;
     }

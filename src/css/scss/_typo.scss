@@ -9,11 +9,13 @@ h5,
 h6 {
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
+  color: #fff;
 }
 p {
   font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 18px;
+  color:$p;
   @media #{$sm} {
     font-size: 16px;
   }
@@ -23,6 +25,12 @@ a{
 }
 .text-center {
   text-align: center;
+}
+
+.underline{
+  text-decoration: underline;
+  -webkit-text-decoration-color: $main; /* Safari */  
+  text-decoration-color: $main;
 }
 
 .c-main{
@@ -47,11 +55,13 @@ a{
 .g-title{
   .g-title__pref{
     display: block;
+     color:#fff;
   }
   .g-title__title{
     font-family: 'Roboto Slab', serif;
     font-weight: 400;
     margin: 0 0 20px 0;
+     color:#fff!important;
   }
 }
 .g-title--small{
@@ -63,6 +73,9 @@ a{
     font-family: 'Roboto Slab', serif;
     font-weight: 400;
     font-size: 36px;
+    @media #{$sm} {
+        font-size: 21px;
+    }
   }
 }
 .g-title--big{
@@ -74,6 +87,9 @@ a{
     font-family: 'Roboto Slab', serif;
     font-weight: 400;
     font-size: 72px;
+    @media #{$sm} {
+      font-size: 31px;
+    }
   }
 }
 .g-title--middle{
@@ -85,5 +101,18 @@ a{
     font-family: 'Roboto Slab', serif;
     font-weight: 400;
     font-size: 55px;
+   
+      @media #{$xlg} {
+        font-size: 38px;
+      }
+      @media #{$lg} {
+        font-size: 34px;
+      }
+      @media #{$md} {
+        font-size: 31px;
+      }
+      @media #{$sm} {
+        font-size: 28px;
+      }
   }
 }

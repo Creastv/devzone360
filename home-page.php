@@ -12,7 +12,7 @@ get_template_part( 'templates-parts/home/home', 'with-us' );
 get_template_part( 'templates-parts/home/home', 'offer' );
 get_template_part( 'templates-parts/home/home', 'cta' );
 get_template_part( 'templates-parts/home/home', 'experiences' );
-get_template_part( 'templates-parts/home/home', 'we-hehome' );
+get_template_part( 'templates-parts/home/home', 'we-help' );
 get_template_part( 'templates-parts/home/home', 'become-a-lion' );
 echo '</article>';
 get_footer();
